@@ -3,7 +3,7 @@ import Product from "@/components/product";
 import { ProductType } from "@/interfaces";
 
 export default async function Home() {
-  const res = await fetch("https://fakestoreapi.com/products");
+  const res = await fetch("https://fakestoreapi.com/products/");
   const products: ProductType[] = await res.json();
 
   console.log(products);
